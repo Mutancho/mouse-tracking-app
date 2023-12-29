@@ -53,8 +53,6 @@ movements and convenient image capturing through webcam interactions.
   within the file.
 - In separate terminal run `docker-compose up --build`.
 
-Alternatively, manually go through the
-
 ## Usage
 
 To use the application, follow these steps:
