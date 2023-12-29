@@ -57,6 +57,8 @@ movements and convenient image capturing through webcam interactions.
 
 To use the application, follow these steps:
 
+**Warning**: Before you run the URL provided in step one, please be aware that the Docker server will attempt to connect to the camera-app server, which is hosted on your local machine (the one connected to the camera). This setup may lead to DNS resolution issues. Currently, this configuration is tested and operational with Docker on WSL 2 within Windows 11. Additionally, testing was conducted on a Manjaro Linux virtual machine, configured with a network adapter in bridged mode (meaning the VM acquires its IP address from the LAN router). In this case, using CAMERA_API_BASE_URL = "http://host.docker.internal:5000" resulted in a DNS resolution error. However, when the router's IP was used instead, the system functioned without issue. To accommodate different network setups, you can modify the connection URL as needed. This can be done by editing the backend/constants.py file. Also, this parameter must be adjusted when the 2 servers are on different machines. 
+
 1. **Open a web browser, such as Google Chrome, and navigate to http://127.0.0.1:8000/static/.**
 
 2. **As you move your mouse within the browser window, the mouse coordinates will be displayed both on the static page
