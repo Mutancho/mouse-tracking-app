@@ -9,6 +9,7 @@ source venv/bin/activate
 
 # Install dependencies from requirements.txt
 pip install -r requirements_camera_api.txt
+pip install -r requirements.txt
 
 # Navigate to the camera_api directory
 cd camera_api
